@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HelloMessage from './components/HelloMessage'
+import Timer from './components/Timer'
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         </a>
 
         <HelloMessage name="SaberMyKing" />
+        <Timer />
+
       </header>
     </div>
   );
