@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import HelloMessage from './components/HelloMessage'
 import Timer from './components/Timer'
+import TodoApp from './components/TodoApp'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
 
         <HelloMessage name="SaberMyKing" />
         <Timer />
+        <TodoApp />
 
       </header>
     </div>
