@@ -1,0 +1,20 @@
+.navigation-bar {
+    position: relative;
+    height: 42px;
+    offset: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; height: 100%;
+    background-color: hsla(0,0%,100%,.4);
+}
+
+.navigation-left-button {
+
+}
+
+.navigation-right-button {
+    
+}

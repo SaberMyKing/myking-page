@@ -1,10 +1,11 @@
 import React from 'react'
+import NavigationBar from '../NavigationBar'
 
 class IndexPage extends React.Component {
     render() {
         return (
             <div>
-                IndexPage123
+                <NavigationBar />
             </div>
         );
     }
