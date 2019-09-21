@@ -1,20 +1,41 @@
-.navigation-bar {
-    position: relative;
-    height: 42px;
-    offset: 0;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; height: 100%;
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-bar-box {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
     background-color: hsla(0,0%,100%,.4);
 }
 
-.navigation-left-button {
-
+.navigation-bar {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    font-size: 12px;
 }
 
-.navigation-right-button {
-    
+.navigation-left-box {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-right-box {
+    width: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.navigation-item {
+    width: 150px;
+    font-size: 12px;
+}
+
+.navigation-myface {
+    height: 32px;
+    border-radius: 50%;
 }
