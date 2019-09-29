@@ -19,6 +19,8 @@ class NavigationBar extends React.Component {
                         <div class='navigation-item'><span>路人模式</span></div>
                     </div>
                 </div>
+
+                <img src='/myface.jpg' class='navigation-myface-details' onMouseOver={ ()=>console.log('over')} alt='This is SaberMyKing.'></img>
             </div>
         );
     }

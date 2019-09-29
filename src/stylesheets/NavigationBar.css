@@ -42,3 +42,9 @@ a {
     height: 32px;
     border-radius: 50%;
 }
+
+.navigation-myface-details {
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+}
