@@ -9,7 +9,7 @@ class NavigationBar extends React.Component {
                 <div class='navigation-bar'>
                     <div class='navigation-left-box'>
                         <div class='navigation-item'><Link to='/'>茵蒂克丝</Link></div>
-                        <div class='navigation-item'><Link to='/articles'>菲特</Link></div>
+                        <div class='navigation-item'><Link to='/articles/details/1'>菲特</Link></div>
                         <div class='navigation-item'><Link to='/articles'>阿尼妹</Link></div>
                     </div>
 

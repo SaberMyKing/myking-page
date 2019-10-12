@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import IndexPage from './pages/IndexPage';
-import { ArticlePage, ArticlesPage } from './pages/ArticlePage';
+import ArticleDetailsPage from './pages/ArticleDetailsPage';
+import ArticlesPage from './pages/ArticlesPage';
 import AboutPage from './pages/AboutPage';
 import NavigationBar from './NavigationBar'
 import GithubCorner from 'react-github-corner';
@@ -16,8 +17,8 @@ function AppRouter() {
 
                 <Switch>
                     <Route exact path="/"><IndexPage /></Route>
-                    <Route path="/articles"><ArticlesPage /></Route>
-                    <Route path="/articles/:id"><ArticlePage /></Route>
+                    <Route exact path="/articles"><ArticlesPage /></Route>
+                    <Route path="/articles/details/:id"><ArticleDetailsPage /></Route>
                     <Route path="/about"><AboutPage /></Route>
                 </Switch>
             </div>
