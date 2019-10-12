@@ -5,7 +5,7 @@ import '../../stylesheets/Page.css'
 class IndexPage extends React.Component {
     render() {
         return (
-            <div class='index-page'>
+            <div>
                 <Banner />
                 This is IndexPage.
             </div>

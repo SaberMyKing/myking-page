@@ -14,12 +14,13 @@ class NavigationBar extends React.Component {
                     </div>
 
                     <div class='navigation-right-box'>
+                        <div class='navigation-item'><span>路人模式</span></div>
+                        <div class='navigation-item'><span>Language</span></div>
                         <div class='navigation-item'>
                             <Link to='/about'>
-                            <img src='/myface.jpg' class='navigation-myface' alt='This is SaberMyKing.'></img>
+                                <img src='/myface.jpg' class='navigation-myface' alt='This is SaberMyKing.'></img>
                             </Link>
                         </div>
-                        <div class='navigation-item'><span>路人模式</span></div>
                     </div>
                 </div>
 

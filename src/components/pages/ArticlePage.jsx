@@ -10,4 +10,14 @@ class ArticlePage extends React.Component {
     }
 }
 
-export default ArticlePage;
+class ArticlesPage extends React.Component {
+    render() {
+        return (
+            <div>
+                Articles List
+            </div>
+        );
+    }
+}
+
+export { ArticlePage, ArticlesPage };
