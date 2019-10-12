@@ -14,10 +14,10 @@ function AppRouter() {
             <NavigationBar />
 
             <Switch>
-                <Route path = "/" component = { IndexPage } />
-                <Route path = "/articles" component = { ArticlePage } />
-                <Route path = "/home" component = { HomePage } />
-                <Route path = "/about" component = { AboutPage } />
+                <Route exact path="/"><IndexPage /></Route>
+                <Route path="/articles"><ArticlePage /></Route>
+                <Route path="/home"><HomePage /></Route>
+                <Route path="/about"><AboutPage /></Route>
             </Switch>
         </Router>
     );
