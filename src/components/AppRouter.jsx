@@ -11,7 +11,7 @@ import './../stylesheets/Page.css'
 function AppRouter() {
     return (
         <Router>
-            <div class='page'>
+            <div className='page'>
                 <GithubCorner href='https://github.com/sabermyking/myking-page' />
                 <NavigationBar />
 
