@@ -1,16 +1,21 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import '../stylesheets/NavigationBar.css';
+import '../stylesheets/navigation-bar.css';
 
 class NavigationBar extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { item_class: 'navigation-item' }
+    }
+
     render() {
         return (
             <div className='navigation-bar-box'>
                 <div className='navigation-bar'>
                     <div className='navigation-left-box'>
-                        <div className='navigation-item'><Link to='/'>茵蒂克丝</Link></div>
-                        <div className='navigation-item'><Link to='/articles/details/1'>菲特</Link></div>
-                        <div className='navigation-item'><Link to='/articles'>阿尼妹</Link></div>
+                        <NavigationItem link_to='/' display='茵蒂克丝'/>
+                        <NavigationItem link_to='/articles/details/1' display='菲特'/>
+                        <NavigationItem link_to='/articles' display='阿尼妹'/>
                     </div>
 
                     <div className='navigation-right-box'>
@@ -28,6 +33,32 @@ class NavigationBar extends React.Component {
             </div>
         );
     }
+}
+
+class NavigationItem extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { class: 'navigation-item' };
+        this.showHover = this.showHover.bind(this);
+        this.hideHover = this.hideHover.bind(this);
+    }
+
+    showHover() {
+        this.setState({ class: 'navigation-item navigation-item-selected' })
+    }
+
+    hideHover() {
+        this.setState({ class: 'navigation-item' })
+    }
+
+    render() {
+        return (
+            <div className={this.state.class} onMouseEnter={ this.showHover } onMouseLeave={ this.hideHover }>
+                <Link to={ this.props.link_to }>{ this.props.display }</Link>
+            </div>
+        )
+    }
+
 }
 
 export default NavigationBar;
