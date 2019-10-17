@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import '../stylesheets/Style.scss'
 
 class Article extends React.Component {
     constructor(props) {
@@ -15,9 +16,7 @@ class Article extends React.Component {
 
     render() {
         return (
-            <div className='markdown'>
-                <ReactMarkdown source={ this.state.text } />
-            </div>
+            <ReactMarkdown className="article markdown" source={ this.state.text } />
         )
     }
 }
