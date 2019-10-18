@@ -53,9 +53,12 @@ class NavigationItem extends React.Component {
 
     render() {
         return (
-            <div className={this.state.class} onMouseEnter={ this.showHover } onMouseLeave={ this.hideHover }>
-                <Link to={ this.props.link_to }>{ this.props.display }</Link>
-            </div>
+            <Link to={ this.props.link_to }
+                className={this.state.class}
+                onMouseEnter={ this.showHover }
+                onMouseLeave={ this.hideHover } >
+                <span>{ this.props.display }</span>
+            </Link>
         )
     }
 
