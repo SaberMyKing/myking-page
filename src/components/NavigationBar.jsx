@@ -14,7 +14,7 @@ class NavigationBar extends React.Component {
                 <div className='navigation-bar'>
                     <div className='navigation-left-box'>
                         <NavigationItem link_to='/' display='茵蒂克丝'/>
-                        <NavigationItem link_to='/articles/details/1' display='菲特'/>
+                        <NavigationItem link_to='/articles/details/骑士王的荣耀' display='菲特'/>
                         <NavigationItem link_to='/articles' display='阿尼妹'/>
                     </div>
 
