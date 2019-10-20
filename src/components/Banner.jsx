@@ -4,8 +4,8 @@ import '../stylesheets/Common.css';
 class Banner extends React.Component {
     render() {
         return (
-            <div class='banner-box'>
-                <div class='banner'>
+            <div className='banner-box'>
+                <div className='banner'>
                     {/* <img src='/myface.jpg' class='navigation-myface' alt='This is SaberMyKing.'></img> */}
                 </div>
             </div>
