@@ -13,19 +13,14 @@ class NavigationBar extends React.Component {
             <div className='navigation-bar-box'>
                 <div className='navigation-bar'>
                     <div className='navigation-left-box'>
-                        <NavigationItem link_to='/' display='茵蒂克丝'/>
-                        <NavigationItem link_to='/articles/details/骑士王的荣耀' display='菲特'/>
-                        <NavigationItem link_to='/articles' display='阿尼妹'/>
+                        <NavigationItem link_to='/' display='Home'/>
+                        <NavigationItem link_to='/articles/details/骑士王的荣耀' display='Fate'/>
+                        <NavigationItem link_to='/articles/details/红宝石' display='Ruby'/>
                     </div>
 
                     <div className='navigation-right-box'>
-                        <div className='navigation-item'><span>路人模式</span></div>
                         <div className='navigation-item'><span>Language</span></div>
-                        <div className='navigation-item'>
-                            <Link to='/about'>
-                                <img src='/myface.jpg' className='navigation-myface' alt='This is SaberMyKing.'></img>
-                            </Link>
-                        </div>
+                        <NavigationAvatar link_to='/about' src='/myface.jpg' alt='This is SaberMyKing.' />
                     </div>
                 </div>
 
@@ -61,7 +56,23 @@ class NavigationItem extends React.Component {
             </Link>
         )
     }
+}
 
+class NavigationAvatar extends NavigationItem {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return (
+            <Link to={ this.props.link_to }
+                className={this.state.class}
+                onMouseEnter={ this.showHover }
+                onMouseLeave={ this.hideHover } >
+                <img src={ this.props.src } className='navigation-myface' alt='This is SaberMyKing.'></img>
+            </Link>
+        )
+    }
 }
 
 export default NavigationBar;
