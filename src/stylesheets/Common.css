@@ -2,3 +2,41 @@
     display: flex;
     justify-content: center;
 }
+
+.article-list-item-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.article-list-item-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.article-list-item-desc-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.article-list-item-img {
+    width: 300px;
+    height: 160px;
+    border-radius: 0.25rem;
+}
+
+.article-list-item-desc {
+    width: 700px;
+    height: 160px;
+    padding: 0px 10px 0px 10px;
+    color: grey;
+}
+
+.article-list-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
