@@ -3,11 +3,6 @@ import { Link } from "react-router-dom";
 import '../stylesheets/navigation-bar.css';
 
 class NavigationBar extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { item_class: 'navigation-item' }
-    }
-
     render() {
         return (
             <div className='navigation-bar-box'>
@@ -59,10 +54,6 @@ class NavigationItem extends React.Component {
 }
 
 class NavigationAvatar extends NavigationItem {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Link to={ this.props.link_to }
