@@ -20,7 +20,7 @@ class Article extends React.Component {
 
     render() {
         return (
-            <ReactMarkdown className="markdown" source={ this.state.text } />
+            <ReactMarkdown className="article markdown" source={ this.state.text } />
         )
     }
 }
