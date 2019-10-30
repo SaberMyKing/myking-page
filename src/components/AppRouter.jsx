@@ -6,7 +6,7 @@ import ArticlesPage from './pages/ArticlesPage';
 import AboutPage from './pages/AboutPage';
 import NavigationBar from './NavigationBar'
 import GithubCorner from 'react-github-corner';
-import './../stylesheets/Page.css'
+import './../stylesheets/Page.css';
 
 function AppRouter() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import '../stylesheets/Style.scss'
+import '../stylesheets/Style.scss';
 
 class Article extends React.Component {
     constructor(props) {

@@ -1,6 +1,6 @@
-import React from 'react'
-import Banner from '../Banner'
-import '../../stylesheets/Page.css'
+import React from 'react';
+import Banner from '../Banner';
+import '../../stylesheets/Page.css';
 import ArticleList from '../ArticleList';
 
 class IndexPage extends React.Component {
