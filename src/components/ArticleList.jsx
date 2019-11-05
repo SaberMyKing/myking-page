@@ -10,7 +10,7 @@ class ArticleList extends React.Component {
                     this.props.items.map(
                         (item, key) => 
                             <ArticleItem title={ item.title }
-                                img_src={ item.img_src }
+                                cover_img={ item.cover_img }
                                 content={ item.content }
                                 key={ key } />)
                 }
@@ -44,7 +44,7 @@ class ArticleItem extends React.Component {
                 <div className='article-list-item'>
                     <b className='article-list-item-title'>{ this.props.title }</b>
                     <div className='article-list-item-desc-container'>
-                        <img className='article-list-item-img' src={ this.props.img_src } alt='article-img'></img>
+                        <img className='article-list-item-img' src={ this.props.cover_img } alt='article-img'></img>
                         <article className='article-list-item-desc'>{ this.props.content }</article>
                     </div>
                 </div>
