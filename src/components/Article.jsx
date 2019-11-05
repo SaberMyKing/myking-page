@@ -18,6 +18,12 @@ class Article extends React.Component {
         this.fetchMarkdown()
     }
 
+    componentDidUpdate(prevProps) {
+        if(this.props.id !== prevProps.id) {
+            this.fetchMarkdown();
+        }
+    }
+
     render() {
         return (
             <ReactMarkdown className="article markdown" source={ this.state.text } />
