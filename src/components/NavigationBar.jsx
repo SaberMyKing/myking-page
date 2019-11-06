@@ -12,6 +12,7 @@ class NavigationBar extends React.Component {
                             <NavigationItem link_to='/' display='Home'/>
                             <NavigationItem link_to='/articles/details/骑士王的荣耀' display='Fate'/>
                             <NavigationItem link_to='/articles/details/红宝石' display='Ruby'/>
+                            <NavigationItem link_to='/release-log' display='Release Log'/>
                         </div>
 
                         <div className='navigation-right-box'>

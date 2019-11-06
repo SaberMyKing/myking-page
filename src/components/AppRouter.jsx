@@ -4,6 +4,7 @@ import IndexPage from './pages/IndexPage';
 import ArticleDetailsPage from './pages/ArticleDetailsPage';
 import ArticlesPage from './pages/ArticlesPage';
 import AboutPage from './pages/AboutPage';
+import ReleaseLogPage from './pages/ReleaseLogPage';
 import NavigationBar from './NavigationBar'
 import GithubCorner from 'react-github-corner';
 import './../stylesheets/Page.css';
@@ -20,6 +21,7 @@ function AppRouter() {
                     <Route exact path="/articles"><ArticlesPage /></Route>
                     <Route path="/articles/details/:id"><ArticleDetailsPage /></Route>
                     <Route path="/about"><AboutPage /></Route>
+                    <Route path="/release-log"><ReleaseLogPage /></Route>
                 </Switch>
             </div>
         </Router>
