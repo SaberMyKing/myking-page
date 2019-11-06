@@ -5,7 +5,7 @@ import '../stylesheets/Style.scss';
 class Article extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = { className: this.props.className || '' }
     }
 
     fetchMarkdown() {
@@ -15,7 +15,7 @@ class Article extends React.Component {
     }
     
     componentDidMount() {
-        this.fetchMarkdown()
+        this.fetchMarkdown();
     }
 
     componentDidUpdate(prevProps) {
@@ -26,7 +26,7 @@ class Article extends React.Component {
 
     render() {
         return (
-            <ReactMarkdown className="article markdown" source={ this.state.text } />
+            <ReactMarkdown className={ `article markdown ${ this.state.className }` } source={ this.state.text } />
         )
     }
 }

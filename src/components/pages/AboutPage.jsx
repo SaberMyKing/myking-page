@@ -10,7 +10,7 @@ class AboutPage extends React.Component {
                 <div className='about-me'>
                     <img className='about-me-img' src='/myface.jpg' alt="sabermyking"></img>
                     <div className='about-me-description'>
-                        <Article id='关于我'/>
+                        <Article id='关于我' className='profile-details' />
                     </div>
                 </div>
             </div>

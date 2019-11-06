@@ -9,7 +9,7 @@ function ArticleDetailsPage() {
     return (
         <div>
             <div className='article-container'>
-                <Article id={ id }/>
+                <Article id={ id } className='article-details' />
             </div>
         </div>
     );
