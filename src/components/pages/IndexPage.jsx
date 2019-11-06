@@ -1,5 +1,4 @@
 import React from 'react';
-import Banner from '../Banner';
 import '../../stylesheets/Page.css';
 import ArticleList from '../ArticleList';
 
@@ -18,7 +17,6 @@ class IndexPage extends React.Component {
     render() {
         return (
             <div>
-                <Banner />
                 <ArticleList items={ this.state.article_items }/>
             </div>
         );

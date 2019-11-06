@@ -5,21 +5,23 @@ import '../stylesheets/navigation-bar.css';
 class NavigationBar extends React.Component {
     render() {
         return (
-            <div className='navigation-bar-box'>
-                <div className='navigation-bar'>
-                    <div className='navigation-left-box'>
-                        <NavigationItem link_to='/' display='Home'/>
-                        <NavigationItem link_to='/articles/details/骑士王的荣耀' display='Fate'/>
-                        <NavigationItem link_to='/articles/details/红宝石' display='Ruby'/>
+            <div className='banner-container'>
+                <div className='navigation-bar-box'>
+                    <div className='navigation-bar'>
+                        <div className='navigation-left-box'>
+                            <NavigationItem link_to='/' display='Home'/>
+                            <NavigationItem link_to='/articles/details/骑士王的荣耀' display='Fate'/>
+                            <NavigationItem link_to='/articles/details/红宝石' display='Ruby'/>
+                        </div>
+
+                        <div className='navigation-right-box'>
+                            <div className='navigation-item'><span>Language</span></div>
+                            <NavigationAvatar link_to='/about' src='/myface.jpg' alt='This is SaberMyKing.' />
+                        </div>
                     </div>
 
-                    <div className='navigation-right-box'>
-                        <div className='navigation-item'><span>Language</span></div>
-                        <NavigationAvatar link_to='/about' src='/myface.jpg' alt='This is SaberMyKing.' />
-                    </div>
+                    {/* <img src='/myface.jpg' className='navigation-myface-details' onMouseOver={ ()=>console.log('over')} alt='This is SaberMyKing.'></img> */}
                 </div>
-
-                {/* <img src='/myface.jpg' className='navigation-myface-details' onMouseOver={ ()=>console.log('over')} alt='This is SaberMyKing.'></img> */}
             </div>
         );
     }
